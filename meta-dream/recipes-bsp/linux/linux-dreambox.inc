@@ -17,7 +17,7 @@ RPROVIDES:${KERNEL_PACKAGE_NAME}-base = "kernel-${KERNEL_VERSION}"
 RPROVIDES:${KERNEL_PACKAGE_NAME}-image = "kernel-image-${KERNEL_VERSION} ${KERNEL_BUILTIN_MODULES}"
 
 USB_ROOT = "/dev/sdb2"
-USB_ROOT_dm8000 = "/dev/sdf2"
+USB_ROOT:dm8000 = "/dev/sdf2"
 
 do_install:append() {
 		${STRIP} ${D}/${KERNEL_IMAGEDEST}/${KERNEL_IMAGETYPE}-${KERNEL_VERSION}
@@ -30,7 +30,7 @@ do_install:append() {
 
 # Set FILES for vmlinux package, so that kernel-image gets those files.
 FILES:${KERNEL_PACKAGE_NAME}-vmlinux = "boot/vmlinux-3.2-dm8000.gz"
-ALLOW_EMPTY_kernel-vmlinux = "1"
+ALLOW_EMPTY:kernel-vmlinux = "1"
 KERNEL_OUTPUT_DIR = "."
 FILES:${KERNEL_PACKAGE_NAME}-image += "\
 	/${KERNEL_IMAGEDEST}/autoexec*.bat \
