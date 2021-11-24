@@ -6,7 +6,7 @@ LICENSE = "MIT"
 RDEPENDS:${PN} = "python-simplejson"
 PV = "0.7+hg${SRCREV}"
 
-SRC_URI = "hg://bitbucket.org/blueluna;protocol=http;module=transmissionrpc;rev=${SRCREV}"
+SRC_URI = "hg://bitbucket.org/blueluna;protocol=https;branch=master;module=transmissionrpc;rev=${SRCREV}"
 
 S = "${WORKDIR}/transmissionrpc"
 

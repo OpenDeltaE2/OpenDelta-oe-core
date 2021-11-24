@@ -9,7 +9,7 @@ inherit allarch
 
 RDEPENDS:${PN} = "python-core streamlink-27"
 
-SRC_URI = "git://github.com/athoik/livestreamersrv.git"
+SRC_URI = "git://github.com/athoik/livestreamersrv.git;protocol=https;branch=master"
 S = "${WORKDIR}/git"
 
 inherit gittag

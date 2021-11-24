@@ -27,7 +27,7 @@ PV = "4.4.1+git${SRCPV}"
 PKGV = "4.4.1+git${GITPKGV}"
 
 SRC_URI = " \
-		git://github.com/FFmpeg/FFmpeg.git;branch=release/4.4 \
+		git://github.com/FFmpeg/FFmpeg.git;branch=release/4.4;protocol=https \
 		file://01_mips64_cpu_detection.patch \
 		file://02_fix_mpegts.patch \
 		file://03_rtsp.patch \
