@@ -120,8 +120,6 @@ ENIGMA2_OPTIONAL = " \
 	enigma2-plugin-drivers-usbserial \
 	enigma2-plugin-extensions-backupsuite \
 	enigma2-plugin-extensions-blurayplayer \
-	enigma2-plugin-extensions-dlnabrowser \
-	enigma2-plugin-extensions-dlnaserver \
 	enigma2-plugin-extensions-e2iplayer \
 	enigma2-plugin-extensions-epgimport \
 	enigma2-plugin-extensions-filecommander \
