@@ -4,7 +4,7 @@ MAINTAINER = "http://osmocom.org/projects/sdr"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://COPYING;md5=751419260aa954499f7abaabaa882bbe"
  
-inherit gitpkgv
+inherit gitpkgv pkgconfig
  
 PV = "1.0+git${SRCPV}"
 PKGV = "1.0+git${GITPKGV}"
