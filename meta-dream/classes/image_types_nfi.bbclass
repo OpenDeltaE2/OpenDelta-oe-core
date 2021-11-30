@@ -44,3 +44,5 @@ EXTRA_IMAGECMD:ubifs ?= "-e ${DREAMBOX_ERASE_BLOCK_SIZE} -n -l"
 do_image_ubifs[depends] += "dreambox-buildimage-native:do_populate_sysroot"
 
 IMAGE_TYPES += "ubifs"
+
+REPRODUCIBLE_TIMESTAMP_ROOTFS = "${@time.strftime('%s')}"
