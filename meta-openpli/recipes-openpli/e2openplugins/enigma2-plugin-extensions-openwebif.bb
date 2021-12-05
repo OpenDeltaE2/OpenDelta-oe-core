@@ -19,14 +19,14 @@ RDEPENDS:${PN} = "\
 	python-unixadmin \
 	"
 
-inherit gitpkgv
+inherit gittag
 
 require openplugins-distutils.inc
 
 SRC_URI += "file://get-rid-of-orgdream-check.patch"
 
-PV = "1+git${SRCPV}"
-PKGV = "1+git${GITPKGV}"
+PV = "git${SRCPV}"
+PKGV = "${GITPKGVTAG}"
 
 python do_cleanup () {
 
