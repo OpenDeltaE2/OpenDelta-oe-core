@@ -1,4 +1,4 @@
-MACHINE_KERNEL_PR:append = ".${INC_PR}.91"
+MACHINE_KERNEL_PR:append = ".${INC_PR}.92"
 
 COMPATIBLE_MACHINE = "dm8000"
 
@@ -43,6 +43,7 @@ SRC_URI = " \
 			file://033-STV-Add-SNR-Signal-report-parameters.patch  \
 			file://034-stv090x-optimized-TS-sync-control.patch \
 			file://035-tbs.patch \
+			file://036-suppress-array-bounds-error.patch \
 			file://defconfig \
 "
 
