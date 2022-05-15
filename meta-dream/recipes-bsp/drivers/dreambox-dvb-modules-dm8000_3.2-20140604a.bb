@@ -5,6 +5,8 @@ DEPENDS += "virtual/kernel"
 PRIORITY = "required"
 PR = "r7.0"
 
+ERROR_QA:remove = "debug-files"
+
 COMPATIBLE_MACHINE = "dm8000"
 
 DREAMBOX_DVB_MODULES_MIRROR ?= "http://sources.dreamboxupdate.com/download/opendreambox/2.0.0/dreambox-dvb-modules"
