@@ -6,25 +6,25 @@ Thanks to OpenPLi.
 
 In comparison to OpenPLi this repository has:<br>
 -Submodules bitbake, openembedded-core and meta-openembedded from master branch,<br>
-&nbsp;with git snapshot of November 27, 2021.<br>
--GCC 11.2.0<br>
--Glibc 2.34<br>
+&nbsp;with git snapshot of May 15, 2022.<br>
+-GCC 12.1.0<br>
+-Glibc 2.35<br>
 -GStreamer 1.19.2<br>
 -Python 2.7.18<br>
--OpenSSL 3.0.0<br>
--Busybox 1.34.1<br>
+-OpenSSL 3.0.3<br>
+-Busybox 1.35.0<br>
 -Dreambox kernel 3.2.102<br>
 and more.<br>
 <br>
 <br>
 Feel free to send pull-request.
 
-Tested with Ubuntu 21.10.
+Tested with Ubuntu 22.04.
 <br>
 <br>
 Dependencies:
 ```
-sudo apt install autoconf automake bison bzip2 cvs diffstat flex g++ gawk gcc gettext git git-lfs gzip help2man ncurses-bin lib32ncurses5-dev libc6-dev libtool texinfo patch perl pkg-config subversion tar texi2html zlib1g-dev chrpath libxml2-utils lz4 xsltproc libglib2.0-dev python-setuptools libc6-i386 genromfs guile-2.0-libs quilt zstd
+sudo apt install autoconf automake bison bzip2 cvs diffstat flex g++ gawk gcc gettext git git-lfs gzip help2man ncurses-bin lib32ncurses-dev libc6-dev libtool make texinfo patch perl pkg-config subversion tar texi2html zlib1g-dev chrpath libxml2-utils lz4 xsltproc libglib2.0-dev python-setuptools libc6-i386 genromfs guile-2.2-libs quilt zstd
 ```
 To build image:
 ```
@@ -34,7 +34,7 @@ cd openpli-dm8000-oe-core
 
 make image
 ```
-When the build is finished, the openpli-enigma2-11.2-dm8000.nfi image file is in the:
+When the build is finished, the openpli-enigma2-12.1-dm8000.nfi image file is in the:
 ```
 build/tmp/deploy/images/dm8000/
 ```
@@ -55,7 +55,7 @@ Create symlinks to your build-environment:
 ```
 cd /var/www/html
 
-sudo mkdir feeds;cd feeds;sudo mkdir openpli-11.2;cd openpli-11.2;
+sudo mkdir feeds;cd feeds;sudo mkdir openpli-12.1;cd openpli-12.1;
 
 sudo ln -s /home/<your username>/openpli-dm8000-oe-core/build/tmp/deploy/ipk/dm8000 dm8000 
 
