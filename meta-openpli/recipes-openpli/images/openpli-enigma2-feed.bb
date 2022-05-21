@@ -92,8 +92,6 @@ OPTIONAL_PACKAGES += " \
 	smbnetfs \
 	sshpass \
 	strace \
-	streamlink-27 \
-	streamlinksrv \	
 	tcpdump \
 	tmux \
 	transmission \
