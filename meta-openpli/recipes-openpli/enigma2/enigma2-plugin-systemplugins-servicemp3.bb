@@ -14,6 +14,7 @@ GST_BASE_RDEPS = "\
 	gstreamer${GST_VERSION}-plugins-base-audioconvert \
 	gstreamer${GST_VERSION}-plugins-base-audiorate \
 	gstreamer${GST_VERSION}-plugins-base-audioresample \
+	gstreamer${GST_VERSION}-plugins-base-vorbis \
 	gstreamer${GST_VERSION}-plugins-base-ogg \
 	gstreamer${GST_VERSION}-plugins-base-opus \
 	gstreamer${GST_VERSION}-plugins-base-playback \
@@ -51,10 +52,6 @@ GST_BAD_RDEPS = "\
 	gstreamer${GST_VERSION}-plugins-bad-dash \
 	gstreamer${GST_VERSION}-plugins-bad-faad \
 	gstreamer${GST_VERSION}-plugins-bad-hls \
-	gstreamer${GST_VERSION}-plugins-bad-mms \
-	gstreamer${GST_VERSION}-plugins-bad-mpegpsdemux \
-	gstreamer${GST_VERSION}-plugins-bad-mpegtsdemux \
-	gstreamer${GST_VERSION}-plugins-bad-opusparse \
 	gstreamer${GST_VERSION}-plugins-bad-rtmp \
 	gstreamer${GST_VERSION}-plugins-bad-smoothstreaming \
 	gstreamer${GST_VERSION}-plugins-bad-videoparsersbad \
@@ -75,9 +72,6 @@ DEPENDS = "\
 
 RDEPENDS:${PN} = "\
 	enigma2 \
-	"
-
-RDEPENDS:${PN} = "\
 	glib-networking \
 	gstreamer${GST_VERSION}-plugin-subsink \
 	virtual/gstreamer${GST_VERSION}-dvbmediasink \
