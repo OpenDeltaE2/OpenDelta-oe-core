@@ -1,4 +1,4 @@
-# Build environment based on OpenPLi (develop branch).
+# Build environment based on OpenPLi ( Master ).
 
 -GCC 12.2.0<br>
 -Glibc 2.36<br>
