@@ -1,4 +1,4 @@
-Build environment based on OpenPLi (develop branch).
+# Build environment based on OpenPLi (develop branch).
 
 -GCC 12.2.0<br>
 -Glibc 2.36<br>
@@ -9,10 +9,8 @@ Build environment based on OpenPLi (develop branch).
 -Dreambox kernel 3.2.102<br>
 and more.<br>
 <br>
-<br>
-Feel free to send pull-request.
 
 Tested with LinuxMint 19.3 xfce.
 <br>
-<br>
+
 ==========================================================
